@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    string value= Session["messgae"].ToString();
+}
+
+
+@{
+
+    @*foreach (var item in ViewData["Students"] as List<string>)
+        {
+           @Html.Raw(item);
+        }*@
+
+    @*foreach (var item in ViewBag.Students)
+        {
+            @Html.Raw(item);
+        }*@
+
+    @*foreach (var item in TempData.Peek("Students") as List<string>)
+    {
+        @Html.Raw(item);
+}*@
+//TempData.Keep("Students");
+
+
+}
+
+<form action="Submit">
+    <label>@value</label>
+    <input type="submit" />
+    </form>
+
